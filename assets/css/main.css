@@ -3,6 +3,8 @@
 ------------------------------------------------------------*/
 body { font-family:'Open Sans', Arial, Sans-Serif; font-size:15px; color:#4c4c4c; }
 h1, h2, h3, h4, h5 { color:#262626; }
+p { line-height:150%; }
+p + p { margin-top:20px; }
 
 /*------------------------------------------------------------
 -------- Grid
