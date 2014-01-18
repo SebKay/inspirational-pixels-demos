@@ -1,0 +1,138 @@
+/*------------------------------------------------------------
+-------- Typography
+------------------------------------------------------------*/
+body { font-family:'Open Sans', Arial, Sans-Serif; font-size:15px; color:#4c4c4c; }
+h1, h2, h3, h4, h5 { color:#262626; }
+
+/*------------------------------------------------------------
+-------- Grid
+------------------------------------------------------------*/
+.full-wrap {
+	max-width:100%;
+	margin:auto;
+}
+
+.wrap {
+	max-width:1300px;
+	width:100%;
+	margin:0px auto;
+}
+
+	.row {
+		width:100%;
+	}
+
+		.row > [class^="block-"] {
+			min-height:20px;
+			margin-right:3%;
+			float:left;
+		}
+
+		.row > [class^="block-"]:last-child {
+			margin-right:0%;
+		}
+
+		.block-1   { width:5.583333333333333%; }
+		.block-2   { width:14.16666666666667%; }
+		.block-2-5 { width:17.6%; }
+		.block-3   { width:22.75%; }
+		.block-4   { width:31.33333333333333%; }
+		.block-5   { width:39.91666666666667%; }
+		.block-6   { width:48.5%; }
+		.block-7   { width:57.08333333333333%; }
+		.block-8   { width:65.66666666666666%; }
+		.block-9   { width:74.25%; }
+		.block-10  { width:82.83333333333333%; }
+		.block-11  { width:91.41666666666666%; }
+		.block-12  { width:100%; }
+
+
+/*------------------------------------------------------------
+-------- Global Styles
+------------------------------------------------------------*/
+.clearfix:after {
+	display:block;
+	clear:both;
+	content:'';
+}
+
+hr {
+	height:1px;
+	margin:40px 0px;
+	border:none;
+	background:#ddd;
+}
+
+/*----- Header -----*/
+.header {
+	margin-bottom:30px;
+	padding:30px 0px 15px;
+	box-shadow:inset 0px -5px 10px -5px rgba(0,0,0,0.2);
+	border-bottom:1px solid #eee;
+	background:#282828;
+}
+
+	.site-logo, .site-logo:after {
+		width:319px;
+		height:39px;
+		display:block;
+		position:relative;
+		overflow:hidden;
+		text-indent:-99999px;
+		transition:opacity linear 0.15s;
+		background:url('http://inspirationalpixels.com/wp-content/themes/inspirational-pixels-v4/assets/img/general/logo-sprite.png') no-repeat;
+	}
+
+	.site-logo:after {
+		position:absolute;
+		top:0px;
+		left:0px;
+		opacity:0;
+		content:'';
+		background-position:0px -46px;
+	}
+
+	.site-logo:hover:after {
+		opacity:1;
+	}
+
+/*----- Nav -----*/
+.nav {
+	padding-top:20px;
+	position:relative;
+}
+
+	li {
+		margin:0px 70px 0px 0px;
+		padding:0px;
+		float:left;
+		display:inline-block;
+		list-style:none;
+	}
+
+	.home {
+		position:relative;
+		top:-2px;
+	}
+
+		a {
+			font-size:0.938em;
+			font-weight:600;
+			text-shadow:-1px 1px 1px black(0.4);
+			text-decoration:none;
+			color:#919191;
+			transition:color linear 0.15s;
+		}
+
+		a:hover {
+			text-decoration:none;
+			color:#fff;
+		}
+
+			.fa-icon {
+				font-size:1.200em;
+			}
+
+			.home .fa-icon {
+				font-size:1.500em;
+			}
