@@ -1,3 +1,4 @@
+/*----- Tabs -----*/
 .tabs {
 	width:100%;
 	display:inline-block;
@@ -25,6 +26,7 @@
 			font-size:16px;
 			font-weight:600;
 			color:#4c4c4c;
+			transition:all linear 0.15s;
 		}
 
 		.tab-links a:hover {
