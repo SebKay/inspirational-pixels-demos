@@ -4,7 +4,7 @@
 	display:inline-block;
 }
 
-	/*----- Links to Tab Content -----*/
+	/*----- Tab Links -----*/
 	/* Clearfix */
 	.tab-links:after {
 		display:block;
