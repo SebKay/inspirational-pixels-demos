@@ -37,11 +37,7 @@ h2 {
 			font-size:16px;
 			font-weight:600;
 			color:#4c4c4c;
-			-webkit-transition:all linear 0.15s;
-			   -moz-transition:all linear 0.15s;			
-			     -o-transition:all linear 0.15s;
-			    -ms-transition:all linear 0.15s;
-			        transition:all linear 0.15s;
+			transition:all linear 0.15s;
 		}
 
 		.tab-links a:hover {
