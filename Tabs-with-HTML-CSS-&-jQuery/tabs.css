@@ -9,6 +9,10 @@ h2 {
 	color:#fff;
 }
 
+.header {
+	border-bottom:1px solid #53a0dc;
+}
+
 /*----- Tabs -----*/
 .tabs {
 	width:100%;
