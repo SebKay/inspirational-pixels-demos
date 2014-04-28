@@ -1,19 +1,21 @@
 $(document).ready(function() {
-	$('.accordian-section-title').click(function(e) {
-		e.preventDefault();
-	});
+	function close_accordian_section() {
+		$('.accordian .accordian-section-title').removeClass('active');
+		$('.accordian .accordian-section-content').hide().removeClass('open');
+	}
 
 	$('.accordian-section-title').click(function(e) {
 		var currentAttrValue = $(this).attr('href');
 
 		if($(e.target).is('.active')) {
-			$('.accordian .accordian-section-title').removeClass('active');
-			$('.accordian .accordian-section-content.open').hide().removeClass('open');
+			close_accordian_section();
 		}else {
-			$('.accordian .accordian-section-title').removeClass('active');
+			close_accordian_section();
+
 			$(this).addClass('active');
-			$('.accordian .accordian-section-content').hide().removeClass('open');
 			$('.accordian ' + currentAttrValue).show().addClass('open');
-		}		
+		}
+
+		e.preventDefault();
 	});
 });
