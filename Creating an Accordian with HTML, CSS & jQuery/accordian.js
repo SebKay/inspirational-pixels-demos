@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	function close_accordian_section() {
 		$('.accordian .accordian-section-title').removeClass('active');
-		$('.accordian .accordian-section-content').hide().removeClass('open');
+		$('.accordian .accordian-section-content').slideUp(300).removeClass('open');
 	}
 
 	$('.accordian-section-title').click(function(e) {
@@ -13,7 +13,7 @@ $(document).ready(function() {
 			close_accordian_section();
 
 			$(this).addClass('active');
-			$('.accordian ' + currentAttrValue).show().addClass('open');
+			$('.accordian ' + currentAttrValue).slideDown(300).addClass('open');
 		}
 
 		e.preventDefault();
