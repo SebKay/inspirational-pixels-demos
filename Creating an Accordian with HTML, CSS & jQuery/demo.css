@@ -1,0 +1,52 @@
+/*------------------------------------*\
+-------- Page Styles: Accordian
+\*------------------------------------*/
+body {
+	background:-moz-radial-gradient(30%, rgba(255,255,255,0.15), rgba(0,0,0,0)), url('img/body-bg.png');
+}
+
+.header {
+	margin-bottom:60px;
+	border-bottom:1px solid #cd9ad6;
+}
+
+/*------------------------------------*\
+-------- DEMO Code: Accordian
+\*------------------------------------*/
+.accordian, .accordian * {
+	-webkit-box-sizing:border-box; 
+	-moz-box-sizing:border-box; 
+	box-sizing:border-box;
+}
+
+.accordian {
+	box-shadow:0px 1px 3px rgba(0,0,0,0.25);
+	border-radius:3px;
+	background:#f7f7f7;
+}
+
+.accordian-section-title {
+	width:100%;
+	padding:15px;
+	display:inline-block;
+	background:#333;
+	transition:all linear 0.15s;
+	/* Type */
+	font-size:1.200em;
+	text-shadow:0px 1px 0px #1a1a1a;
+	color:#fff;
+}
+
+.accordian-section-title:hover {
+	background:#4c4c4c;
+	/* Type */
+	text-decoration:none;
+}
+
+.accordian-section:first-child .accordian-section-title {
+	border-radius:3px 3px 0px 0px;
+}
+
+.accordian-section-content {
+	padding:15px;
+}
