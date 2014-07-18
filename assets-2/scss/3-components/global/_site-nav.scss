@@ -1,0 +1,27 @@
+.site-nav {
+	width:100%;
+	margin-top:30px;
+	padding-top:30px;
+	box-shadow:inset 0px 1px 0px white(0.05);
+	border-top:1px solid black(0.75);
+
+	a {
+		margin-right:40px;
+		// Type
+		font-weight:600;
+		color:#777;
+		@include transition(color linear 0.15s);
+
+		&:hover {
+			// Type
+			text-decoration:none;
+			color:#fff;
+		}
+
+		[class^="fa-"] {
+			margin-right:5px;
+			// Type
+			font-size:1.200em;
+		}
+	}
+}

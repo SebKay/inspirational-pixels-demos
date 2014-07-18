@@ -1,0 +1,19 @@
+//----- Transition
+@mixin transition($properties) {
+	   -moz-transition:$properties;
+	-webkit-transition:$properties;
+		 -o-transition:$properties;
+		-ms-transition:$properties;
+}
+
+//----- Alert Styles
+@mixin alert-styles($border-color, $bg-color, $text-color, $icon-code) {
+	border-color:$border-color;
+	background:$bg-color;
+	// Type
+	color:$text-color;
+
+	p:before {
+		content:'#{$icon-code}';
+	}
+}

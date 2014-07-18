@@ -1,0 +1,31 @@
+//----- Global
+body, input { font-family:$font-family-1; font-size:$base-font-size; color:$base-font-color; line-height:100%; }
+
+//----- Headers
+h1, h1 a,
+h2, h2 a,
+h3, h3 a,
+h4, h4 a,
+h5, h5 a { font-family:$font-family-2; color:$header-color; line-height:1.200em; }
+
+h1 { font-size:$base-font-size * 2.38; }
+h2 { font-size:2.000em; }
+h3 { font-size:$base-font-size * 1.6; }
+h4 { font-size:$base-font-size * 1.375; }
+h5 { font-size:$base-font-size * 1.1; }
+
+//----- General
+p     { font-size:$text-font-size; line-height:1.750em; }
+p + p { margin-top:20px; }
+
+ul li, ol li { margin:10px 0px 10px 40px; font-size:0.933em; line-height:1.650em; }
+
+ul + p, ol + p,
+p + h1, p + h2, p + h3, p + h4, p + h5 { margin-top:30px; }
+
+p + ul, p + ol { margin-top:10px; }
+
+strong  { font-weight:nth($font-weights, 3); }
+em      { font-style:italic; }
+a       { color:$ui-color-1; text-decoration:none; }
+a:hover { text-decoration:underline; }

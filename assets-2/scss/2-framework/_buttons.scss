@@ -1,0 +1,74 @@
+//----- Default Buttons
+.btn, #submit {
+	padding:12px 16px;
+	display:inline-block;
+	outline:0;
+	box-shadow:inset 0px 0px 0px 1px black(0.3), inset 0px 2px 0px white(0.15), 0px 1px 2px black(0.1);
+	border-radius:$border-radius;
+	border:none;
+	background:$ui-color-1;
+	@include transition(all linear 0.15s);
+	// Type
+	font-family:$font-family-1;
+	font-size:0.938em;
+	font-weight:nth($font-weights, 2);
+	text-shadow:-1px 1px 1px black(0.2);
+	line-height:100%;
+	color:#fff;
+
+	&:hover, &:active {
+		cursor:pointer;
+		background:scale-color(#3C8FC7, $lightness: 20%);
+		// Type
+		text-decoration:none;
+	}
+
+	&:active {
+		box-shadow:inset 0px 0px 0px 1px black(0.3), inset 0px 1px 3px black(0.5);
+	}
+
+	//----- Icon in Button
+	[class^="fa-"] {
+		// Type
+		line-height:0px;
+	}
+}
+
+//----- Form <button></button>
+button.btn {
+	padding-top:12px !important;
+	padding-bottom:12px !important;
+}
+
+//----- Small
+.btn.small {
+	padding:8px 12px 10px;
+	// Type
+	font-size:0.750em;
+}
+
+//----- Large
+.btn.large {
+	padding:17px 24px;
+	// Type
+	font-size:1.500em;
+}
+
+//----- Button Group
+.btn-group {
+	display:inline-block;
+
+	.btn {
+		margin-right:-1px;
+		float:left;
+		border-radius:0px;
+
+		&:first-child {
+			border-radius:$border-radius 0px 0px $border-radius;
+		}
+
+		&:last-child {
+			border-radius:0px $border-radius $border-radius 0px;
+		}
+	}
+}

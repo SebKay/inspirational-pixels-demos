@@ -1,0 +1,50 @@
+/*------------------------------------*\
+-------- Base
+\*------------------------------------*/
+@import
+	'1-base/variables',
+	'1-base/functions',
+	'1-base/extends',
+	'1-base/mixins',
+	'1-base/reset';
+
+
+
+/*------------------------------------*\
+-------- Framework
+\*------------------------------------*/
+@import
+	'2-framework/typography',
+	'2-framework/font-awesome',
+	'2-framework/buttons';
+
+
+
+/*------------------------------------*\
+-------- Components
+\*------------------------------------*/
+@import
+	'3-components/global/site-header',
+	'3-components/global/site-logo',
+	'3-components/global/site-nav';
+
+
+
+/*------------------------------------*\
+-------- General Styles
+\*------------------------------------*/
+html, body {
+	height:100%;
+	background:#fff;
+}
+
+.main {
+	width:1000px;
+	margin:0px auto;
+	@extend %clearfix;
+}
+
+img {
+	max-width:100%;
+	height:auto;
+}
