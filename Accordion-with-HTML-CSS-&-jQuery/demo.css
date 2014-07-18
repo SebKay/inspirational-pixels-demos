@@ -1,5 +1,5 @@
 /*------------------------------------*\
--------- Page Styles: Accordian
+-------- Page Styles: accordion
 \*------------------------------------*/
 body:before {
 	width:100%;
@@ -9,7 +9,10 @@ body:before {
 	left:0px;
 	z-index:-1;
 	content:'';
+	background:-webkit-radial-gradient(30%, rgba(255,255,255,0.15), rgba(0,0,0,0)), url('img/body-bg.png');
 	background:-moz-radial-gradient(30%, rgba(255,255,255,0.15), rgba(0,0,0,0)), url('img/body-bg.png');
+	background:-o-radial-gradient(30%, rgba(255,255,255,0.15), rgba(0,0,0,0)), url('img/body-bg.png');
+	background:radial-gradient(30%, rgba(255,255,255,0.15), rgba(0,0,0,0)), url('img/body-bg.png');
 }
 
 .header {
@@ -18,16 +21,16 @@ body:before {
 }
 
 /*------------------------------------*\
--------- DEMO Code: Accordian
+-------- DEMO Code: accordion
 \*------------------------------------*/
-/*----- Accordian -----*/
-.accordian, .accordian * {
+/*----- Accordion -----*/
+.accordion, .accordion * {
 	-webkit-box-sizing:border-box; 
 	-moz-box-sizing:border-box; 
 	box-sizing:border-box;
 }
 
-.accordian {
+.accordion {
 	overflow:hidden;
 	box-shadow:0px 1px 3px rgba(0,0,0,0.25);
 	border-radius:3px;
@@ -35,7 +38,7 @@ body:before {
 }
 
 /*----- Section Titles -----*/
-.accordian-section-title {
+.accordion-section-title {
 	width:100%;
 	padding:15px;
 	display:inline-block;
@@ -48,18 +51,18 @@ body:before {
 	color:#fff;
 }
 
-.accordian-section-title.active, .accordian-section-title:hover {
+.accordion-section-title.active, .accordion-section-title:hover {
 	background:#4c4c4c;
 	/* Type */
 	text-decoration:none;
 }
 
-.accordian-section:last-child .accordian-section-title {
+.accordion-section:last-child .accordion-section-title {
 	border-bottom:none;
 }
 
 /*----- Section Content -----*/
-.accordian-section-content {
+.accordion-section-content {
 	padding:15px;
 	display:none;
 }
