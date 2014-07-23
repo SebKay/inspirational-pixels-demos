@@ -1,0 +1,52 @@
+//----- Clearfix
+%clearfix:after, .clearfix:after, .clearfix {
+	display:block;
+	clear:both;
+	content:'';
+}
+
+//----- Grid Container
+.sass-grid {
+	@extend %clearfix;
+}
+
+//----- Grid System
+.row {
+	width:100%;
+	margin-bottom:20px;
+	@extend %clearfix;
+}
+
+[class^="block-"] {
+	min-height:20px;
+	margin-right:4%;
+	float:left;
+	background:#ddd;
+}
+
+[class^="block-"]:last-child {
+	margin-right:0%;
+}
+
+//----- Block Widths
+.block-1   { width:4.666666666666667%; }
+.block-2   { width:13.33333333333333%; }
+.block-2-5 { width:17.6%; }
+.block-3   { width:22%; }
+.block-4   { width:30.66666666666667%; }
+.block-5   { width:39.33333333333334%; }
+.block-6   { width:48%; }
+.block-7   { width:56.66666666666667%; }
+.block-8   { width:65.33333333333334%; }
+.block-9   { width:74%; }
+.block-10  { width:82.66666666666667%; }
+.block-11  { width:91.33333333333334%; }
+.block-12  { width:100%; }
+
+//----- Remove Margin Right (Respectively)
+.block-1:nth-of-type(12n),
+.block-2:nth-of-type(6n),
+.block-3:nth-of-type(4n),
+.block-4:nth-of-type(3n),
+.block-6:nth-of-type(2n),
+.block-12:nth-of-type(1n) { margin-right:0%; }

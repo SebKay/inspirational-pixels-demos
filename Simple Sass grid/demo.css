@@ -1,0 +1,100 @@
+/* line 2, demo.scss */
+.sass-grid:after, .row:after, .clearfix:after, .clearfix {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+/* line 14, demo.scss */
+.row {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* line 20, demo.scss */
+[class^="block-"] {
+  min-height: 20px;
+  margin-right: 4%;
+  float: left;
+  background: #ddd;
+}
+
+/* line 27, demo.scss */
+[class^="block-"]:last-child {
+  margin-right: 0%;
+}
+
+/* line 32, demo.scss */
+.block-1 {
+  width: 4.666666666666667%;
+}
+
+/* line 33, demo.scss */
+.block-2 {
+  width: 13.33333333333333%;
+}
+
+/* line 34, demo.scss */
+.block-2-5 {
+  width: 17.6%;
+}
+
+/* line 35, demo.scss */
+.block-3 {
+  width: 22%;
+}
+
+/* line 36, demo.scss */
+.block-4 {
+  width: 30.66666666666667%;
+}
+
+/* line 37, demo.scss */
+.block-5 {
+  width: 39.33333333333334%;
+}
+
+/* line 38, demo.scss */
+.block-6 {
+  width: 48%;
+}
+
+/* line 39, demo.scss */
+.block-7 {
+  width: 56.66666666666667%;
+}
+
+/* line 40, demo.scss */
+.block-8 {
+  width: 65.33333333333334%;
+}
+
+/* line 41, demo.scss */
+.block-9 {
+  width: 74%;
+}
+
+/* line 42, demo.scss */
+.block-10 {
+  width: 82.66666666666667%;
+}
+
+/* line 43, demo.scss */
+.block-11 {
+  width: 91.33333333333334%;
+}
+
+/* line 44, demo.scss */
+.block-12 {
+  width: 100%;
+}
+
+/* line 52, demo.scss */
+.block-1:nth-of-type(12n),
+.block-2:nth-of-type(6n),
+.block-3:nth-of-type(4n),
+.block-4:nth-of-type(3n),
+.block-6:nth-of-type(2n),
+.block-12:nth-of-type(1n) {
+  margin-right: 0%;
+}
