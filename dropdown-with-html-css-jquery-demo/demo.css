@@ -31,6 +31,7 @@ body {
 }
 
 .menu a {
+	transition:all linear 0.15s;
 	color:#919191;
 }
 
@@ -60,6 +61,7 @@ body {
 /*----- Bottom Level -----*/
 .menu li:hover .sub-menu {
 	z-index:1;
+	opacity:1;
 }
 
 .sub-menu {
@@ -69,7 +71,9 @@ body {
 	top:100%;
 	left:0px;
 	z-index:-1;
+	opacity:0;
 	background:#2e2728;
+	transition:opacity linear 0.15s;
 }
 
 .sub-menu li {
