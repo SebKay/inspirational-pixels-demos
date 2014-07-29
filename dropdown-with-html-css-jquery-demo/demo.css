@@ -1,6 +1,65 @@
+.main {
+	width:100%;
+}
 /*------------------------------------------------------------
 -------- DEMO Code
 ------------------------------------------------------------*/
 body {
 	background:#bf5c71 url('body-bg.jpg');
+}
+
+.menu-wrap {
+	width:100%;
+	background:#3e3436;
+}
+
+.clearfix:after {
+	display:block;
+	clear:both;
+}
+
+/*----- Menu Outline -----*/
+.menu {
+	width:1000px;
+	margin:0px auto;
+}
+
+.menu li {
+	margin:0px;
+	list-style:none;
+	font-family:'Ek Mukta';
+}
+
+.menu a {
+	color:#919191;
+}
+
+/*----- Top Level -----*/
+.menu > ul > li {
+	float:left;
+	display:inline-block;
+	font-size:19px;
+}
+
+.menu > ul > li > a {
+	padding:10px 40px;
+	display:inline-block;
+	text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+}
+
+.menu > ul > li > a:hover {
+	background:#2e2728;
+	text-decoration:none;
+	color:#fff;
+}
+
+/*----- Bottom Level -----*/
+.sub-menu {
+	width:300px;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+.sub-menu li {
+	font-size:16px;
 }
