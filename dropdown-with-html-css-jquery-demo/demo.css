@@ -34,10 +34,16 @@ body {
 	color:#919191;
 }
 
+.menu a:hover, .menu .current-item > a {
+	text-decoration:none;
+	color:#be5b70;
+}
+
 /*----- Top Level -----*/
 .menu > ul > li {
 	float:left;
 	display:inline-block;
+	position:relative;
 	font-size:19px;
 }
 
@@ -47,19 +53,38 @@ body {
 	text-shadow:0px 1px 0px rgba(0,0,0,0.4);
 }
 
-.menu > ul > li > a:hover {
+.menu > ul > li > a:hover, .menu > ul > .current-item > a {
 	background:#2e2728;
-	text-decoration:none;
-	color:#fff;
 }
 
 /*----- Bottom Level -----*/
 .sub-menu {
-	width:300px;
+	width:160%;
+	padding:5px 0px;
 	position:absolute;
-	top:0px;
+	top:100%;
 	left:0px;
+	background:#2e2728;
 }
+
 .sub-menu li {
+	display:block;
 	font-size:16px;
+}
+
+.sub-menu li a {
+	padding:10px 30px;
+	display:block;
+}
+
+.sub-menu li:first-child a {
+	margin-top:0px;
+}
+
+.sub-menu li:last-child a {
+	margin-bottom:0px;
+}
+
+.sub-menu li a:hover, .sub-menu .current-item a {
+	background:#3e3436;
 }
