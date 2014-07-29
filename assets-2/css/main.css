@@ -2149,7 +2149,7 @@ button.btn {
 }
 
 /* line 1, ../scss/3-components/global/_site-nav.scss */
-.site-nav {
+.site-header .site-nav {
   width: 100%;
   margin-top: 30px;
   padding-top: 30px;
@@ -2157,7 +2157,7 @@ button.btn {
   border-top: 1px solid rgba(0, 0, 0, 0.75);
 }
 /* line 8, ../scss/3-components/global/_site-nav.scss */
-.site-nav a {
+.site-header .site-nav a {
   margin-right: 40px;
   font-weight: 600;
   color: #777;
@@ -2167,12 +2167,12 @@ button.btn {
   -ms-transition: color linear 0.15s;
 }
 /* line 15, ../scss/3-components/global/_site-nav.scss */
-.site-nav a:hover {
+.site-header .site-nav a:hover {
   text-decoration: none;
   color: #fff;
 }
 /* line 21, ../scss/3-components/global/_site-nav.scss */
-.site-nav a [class^="fa-"] {
+.site-header .site-nav a [class^="fa-"] {
   margin-right: 5px;
   font-size: 1.200em;
 }
