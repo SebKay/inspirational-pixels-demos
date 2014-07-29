@@ -1,6 +1,13 @@
-.main {
-	width:100%;
+h1, h3 {
+	text-shadow:0px 1px 1px rgba(0,0,0,0.2);
+	color:#fff;
 }
+
+h3 {
+	margin:20px 0px 40px;
+	color:#ffd2e5;
+}
+
 /*------------------------------------------------------------
 -------- DEMO Code
 ------------------------------------------------------------*/
@@ -10,6 +17,7 @@ body {
 
 .menu-wrap {
 	width:100%;
+	box-shadow:0px 1px 3px rgba(0,0,0,0.2);
 	background:#3e3436;
 }
 
@@ -38,6 +46,11 @@ body {
 .menu li:hover > a, .menu .current-item > a {
 	text-decoration:none;
 	color:#be5b70;
+}
+
+.menu .arrow {
+	font-size:11px;
+	line-height:0%;
 }
 
 /*----- Top Level -----*/
@@ -72,6 +85,7 @@ body {
 	left:0px;
 	z-index:-1;
 	opacity:0;
+	box-shadow:0px 2px 3px rgba(0,0,0,0.2);
 	background:#2e2728;
 	transition:opacity linear 0.15s;
 }
