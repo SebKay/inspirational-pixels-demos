@@ -15,18 +15,18 @@ body {
 	background:#bf5c71 url('body-bg.jpg');
 }
 
-.menu-wrap {
-	width:100%;
-	box-shadow:0px 1px 3px rgba(0,0,0,0.2);
-	background:#3e3436;
-}
-
 .clearfix:after {
 	display:block;
 	clear:both;
 }
 
 /*----- Menu Outline -----*/
+.menu-wrap {
+	width:100%;
+	box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+	background:#3e3436;
+}
+
 .menu {
 	width:1000px;
 	margin:0px auto;
@@ -85,9 +85,9 @@ body {
 	left:0px;
 	z-index:-1;
 	opacity:0;
+	transition:opacity linear 0.15s;
 	box-shadow:0px 2px 3px rgba(0,0,0,0.2);
 	background:#2e2728;
-	transition:opacity linear 0.15s;
 }
 
 .sub-menu li {
@@ -98,14 +98,6 @@ body {
 .sub-menu li a {
 	padding:10px 30px;
 	display:block;
-}
-
-.sub-menu li:first-child a {
-	margin-top:0px;
-}
-
-.sub-menu li:last-child a {
-	margin-bottom:0px;
 }
 
 .sub-menu li a:hover, .sub-menu .current-item a {
