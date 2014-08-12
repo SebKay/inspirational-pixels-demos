@@ -98,6 +98,10 @@ body {
 		display:inline-block;
 	}
 
+	.menu ul.active {
+		display:none;
+	}
+
 	.menu ul {
 		width:100%;
 		position:absolute;
