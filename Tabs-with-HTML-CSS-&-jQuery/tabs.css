@@ -1,6 +1,7 @@
 /*----- Global -----*/
-body {
-	background:#00598f;
+.wrap {
+	padding:60px 0px;
+	background:#4a98d3;
 	background:radial-gradient(at 40% 30%, #4a98d3, #00598f);
 }
 
@@ -9,7 +10,8 @@ h2 {
 	color:#fff;
 }
 
-.header {
+.site-header-wrap {
+	margin-bottom:0px;
 	border-bottom:1px solid #53a0dc;
 }
 

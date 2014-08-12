@@ -1,161 +1,155 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Creating Tabs with HTML, CSS &amp; jQuery  | Inspirational Pixels</title>
+	<title>Creating a Reponsive Menu with HTML &amp; CSS (Demo) | Inspirational Pixels</title>
 
-	<link rel="stylesheet" type="text/css" href="../assets/css/reset.css?12345" />
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic" />
-	<link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.css?12345" />
-	<link rel="stylesheet" type="text/css" href="../assets/css/main.css?12345" />
-	<link rel="stylesheet" type="text/css" href="tabs.css" />
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="../assets-2/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Abeezee:400|Open+Sans:400,600,700|Source+Sans+Pro:400,600">
+	<link rel="stylesheet" type="text/css" href="../assets-2/css/main.css">
+
+	<link rel="stylesheet" type="text/css" href="tabs.css">
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="tabs.js"></script>
-	
+
 	<script type="text/javascript" src="../assets/js/analytics.js"></script>
 </head>
 <body>
-	<div class="full-wrap header clearfix">
-		<div class="wrap">
-			<div class="row">
-				<div class="block-12 text-center">
-					<a class="site-logo" href="http://inspirationalpixels.com">Inspirational Pixels DEMOS</a>
-				</div><!--end .block-12-->
-			</div><!--end .row-->
+	<header class="site-header-wrap">
+		<div class="site-header">
+			<a class="site-logo" href="http://inspirationalpixels.com">Inspirational Pixels <span>DEMO</span></a>
 
-			<div class="row">
-				<div class="block-12 text-center">
-					<ul class="nav">
-						<li class="home"><a href="http://inspirationalpixels.com"><span class="fa-icon">&#xf015;</span></a></li>
-						<li><a href="http://inspirationalpixels.com/tutorials/creating-tabs-with-html-css-and-jquery"><span class="fa-icon">&#xf112;</span> Back To Article</a></li>
-					</ul>
-				</div><!--end .block-12-->
-			</div><!--end .row-->
-		</div><!--end .wrap-->
-	</div><!--end .full-wrap-->
+			<nav class="site-nav">
+				<a href="http://inspirationalpixels.com/tutorials/creating-tabs-with-html-css-and-jquery"><span class="fa-reply"></span>Back To Tutorial</a>
+				<a href="http://inspirationalpixels.com/tag/demo"><span class="fa-eye"></span>All Demos</a>
+			</nav>
+		</div>
+	</header>
 
 	<div class="wrap">
-		<h2>Standard Tabs</h2>
+		<div class="main">
+			<h2>Standard Tabs</h2>
 
-		<div class="tabs standard">
-			<ul class="tab-links">
-				<li class="active"><a href="#tab1">Tab #1</a></li>
-				<li><a href="#tab2">Tab #2</a></li>
-				<li><a href="#tab3">Tab #3</a></li>
-			</ul>
+			<div class="tabs standard">
+				<ul class="tab-links">
+					<li class="active"><a href="#tab1">Tab #1</a></li>
+					<li><a href="#tab2">Tab #2</a></li>
+					<li><a href="#tab3">Tab #3</a></li>
+				</ul>
 
-			<div class="tab-content">
-				<div id="tab1" class="tab active">
-					<p>Tab #1 content goes here!</p>
-					<p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis.</p>
-				</div>
+				<div class="tab-content">
+					<div id="tab1" class="tab active">
+						<p>Tab #1 content goes here!</p>
+						<p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis.</p>
+					</div>
 
-				<div id="tab2" class="tab">
-					<p>Tab #2 content goes here!</p>
-					<p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis. In hac habitasse platea dictumst. Ut euismod tempus hendrerit. Morbi ut adipiscing nisi. Etiam rutrum sodales gravida! Aliquam tellus orci, iaculis vel.</p>
-				</div>
+					<div id="tab2" class="tab">
+						<p>Tab #2 content goes here!</p>
+						<p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis. In hac habitasse platea dictumst. Ut euismod tempus hendrerit. Morbi ut adipiscing nisi. Etiam rutrum sodales gravida! Aliquam tellus orci, iaculis vel.</p>
+					</div>
 
-				<div id="tab3" class="tab">
-					<p>Tab #3 content goes here!</p>
-					<p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum ri.</p>
-				</div>
-			</div>
-		</div>
-	</div><!--end .wrap-->
-
-	<br /><br /><br /><br /><br /><br />
-
-	<div class="wrap">
-		<h2>Animated 'Fade' Tabs</h2>
-
-		<div class="tabs animated-fade">
-			<ul class="tab-links">
-				<li class="active"><a href="#tab11">Tab #1</a></li>
-				<li><a href="#tab22">Tab #2</a></li>
-				<li><a href="#tab33">Tab #3</a></li>
-			</ul>
-
-			<div class="tab-content">
-				<div id="tab11" class="tab active">
-					<p>Tab #1 content goes here!</p>
-					<p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis.</p>
-				</div>
-
-				<div id="tab22" class="tab">
-					<p>Tab #2 content goes here!</p>
-					<p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis. In hac habitasse platea dictumst. Ut euismod tempus hendrerit. Morbi ut adipiscing nisi. Etiam rutrum sodales gravida! Aliquam tellus orci, iaculis vel.</p>
-				</div>
-
-				<div id="tab33" class="tab">
-					<p>Tab #3 content goes here!</p>
-					<p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum ri.</p>
+					<div id="tab3" class="tab">
+						<p>Tab #3 content goes here!</p>
+						<p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum ri.</p>
+					</div>
 				</div>
 			</div>
-		</div>
-	</div><!--end .wrap-->
+		</div><!--end .main-->
 
-	<br /><br /><br /><br /><br /><br />
+		<br /><br /><br /><br /><br /><br />
 
-	<div class="wrap">
-		<h2>Animated 'Slide 1' Tabs</h2>
+		<div class="main">
+			<h2>Animated 'Fade' Tabs</h2>
 
-		<div class="tabs animated-slide-1">
-			<ul class="tab-links">
-				<li class="active"><a href="#tab111">Tab #1</a></li>
-				<li><a href="#tab222">Tab #2</a></li>
-				<li><a href="#tab333">Tab #3</a></li>
-			</ul>
+			<div class="tabs animated-fade">
+				<ul class="tab-links">
+					<li class="active"><a href="#tab11">Tab #1</a></li>
+					<li><a href="#tab22">Tab #2</a></li>
+					<li><a href="#tab33">Tab #3</a></li>
+				</ul>
 
-			<div class="tab-content">
-				<div id="tab111" class="tab active">
-					<p>Tab #1 content goes here!</p>
-					<p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis.</p>
-				</div>
+				<div class="tab-content">
+					<div id="tab11" class="tab active">
+						<p>Tab #1 content goes here!</p>
+						<p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis.</p>
+					</div>
 
-				<div id="tab222" class="tab">
-					<p>Tab #2 content goes here!</p>
-					<p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis. In hac habitasse platea dictumst. Ut euismod tempus hendrerit. Morbi ut adipiscing nisi. Etiam rutrum sodales gravida! Aliquam tellus orci, iaculis vel.</p>
-				</div>
+					<div id="tab22" class="tab">
+						<p>Tab #2 content goes here!</p>
+						<p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis. In hac habitasse platea dictumst. Ut euismod tempus hendrerit. Morbi ut adipiscing nisi. Etiam rutrum sodales gravida! Aliquam tellus orci, iaculis vel.</p>
+					</div>
 
-				<div id="tab333" class="tab">
-					<p>Tab #3 content goes here!</p>
-					<p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum ri.</p>
-				</div>
-			</div>
-		</div>
-	</div><!--end .wrap-->
-
-	<br /><br /><br /><br /><br /><br />
-
-	<div class="wrap">
-		<h2>Animated 'Slide 2' Tabs</h2>
-
-		<div class="tabs animated-slide-2">
-			<ul class="tab-links">
-				<li class="active"><a href="#tab1111">Tab #1</a></li>
-				<li><a href="#tab2222">Tab #2</a></li>
-				<li><a href="#tab3333">Tab #3</a></li>
-			</ul>
-
-			<div class="tab-content">
-				<div id="tab1111" class="tab active">
-					<p>Tab #1 content goes here!</p>
-					<p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis.</p>
-				</div>
-
-				<div id="tab2222" class="tab">
-					<p>Tab #2 content goes here!</p>
-					<p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis. In hac habitasse platea dictumst. Ut euismod tempus hendrerit. Morbi ut adipiscing nisi. Etiam rutrum sodales gravida! Aliquam tellus orci, iaculis vel.</p>
-				</div>
-
-				<div id="tab3333" class="tab">
-					<p>Tab #3 content goes here!</p>
-					<p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum ri.</p>
+					<div id="tab33" class="tab">
+						<p>Tab #3 content goes here!</p>
+						<p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum ri.</p>
+					</div>
 				</div>
 			</div>
-		</div>
-	</div><!--end .wrap-->
+		</div><!--end .main-->
 
-	<br /><br /><br /><br /><br /><br />
+		<br /><br /><br /><br /><br /><br />
+
+		<div class="main">
+			<h2>Animated 'Slide 1' Tabs</h2>
+
+			<div class="tabs animated-slide-1">
+				<ul class="tab-links">
+					<li class="active"><a href="#tab111">Tab #1</a></li>
+					<li><a href="#tab222">Tab #2</a></li>
+					<li><a href="#tab333">Tab #3</a></li>
+				</ul>
+
+				<div class="tab-content">
+					<div id="tab111" class="tab active">
+						<p>Tab #1 content goes here!</p>
+						<p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis.</p>
+					</div>
+
+					<div id="tab222" class="tab">
+						<p>Tab #2 content goes here!</p>
+						<p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis. In hac habitasse platea dictumst. Ut euismod tempus hendrerit. Morbi ut adipiscing nisi. Etiam rutrum sodales gravida! Aliquam tellus orci, iaculis vel.</p>
+					</div>
+
+					<div id="tab333" class="tab">
+						<p>Tab #3 content goes here!</p>
+						<p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum ri.</p>
+					</div>
+				</div>
+			</div>
+		</div><!--end .main-->
+
+		<br /><br /><br /><br /><br /><br />
+
+		<div class="main">
+			<h2>Animated 'Slide 2' Tabs</h2>
+
+			<div class="tabs animated-slide-2">
+				<ul class="tab-links">
+					<li class="active"><a href="#tab1111">Tab #1</a></li>
+					<li><a href="#tab2222">Tab #2</a></li>
+					<li><a href="#tab3333">Tab #3</a></li>
+				</ul>
+
+				<div class="tab-content">
+					<div id="tab1111" class="tab active">
+						<p>Tab #1 content goes here!</p>
+						<p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis.</p>
+					</div>
+
+					<div id="tab2222" class="tab">
+						<p>Tab #2 content goes here!</p>
+						<p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis. In hac habitasse platea dictumst. Ut euismod tempus hendrerit. Morbi ut adipiscing nisi. Etiam rutrum sodales gravida! Aliquam tellus orci, iaculis vel.</p>
+					</div>
+
+					<div id="tab3333" class="tab">
+						<p>Tab #3 content goes here!</p>
+						<p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum ri.</p>
+					</div>
+				</div>
+			</div>
+		</div><!--end .main-->
+	</div>
 </body>
 </html>
