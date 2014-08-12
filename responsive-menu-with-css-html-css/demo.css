@@ -5,10 +5,8 @@ body {
 	background:#e3e3e3 url('body-bg.png');
 }
 
-.main {
-	font-family:'Source Sans Pro';
-}
 
+/*----- Menu -----*/
 .menu {
 	width:100%;
 	padding:10px 18px;
@@ -22,15 +20,42 @@ body {
 	margin:0px 50px 0px 0px;
 	float:left;
 	list-style:none;
-	font-size:19px;
+	font-size:17px;
 }
 
 .menu a {
 	text-shadow:0px 1px 0px rgba(0,0,0,0.5);
 	color:#777;
+	transition:color linear 0.15s;
 }
 
 .menu a:hover, .menu .current-item a {
 	text-decoration:none;
 	color:#66a992;
+}
+
+/*----- Search -----*/
+.search-form {
+	float:right;
+	display:inline-block;
+}
+
+.search-form input {
+	width:200px;
+	height:30px;
+	padding:0px 8px;
+	float:left;
+	border-radius:2px 0px 0px 2px;
+	font-size:13px;
+}
+
+.search-form button {
+	height:30px;
+	padding:0px 7px;
+	float:right;
+	border-radius:0px 2px 2px 0px;
+	background:#66a992;
+	font-size:13px;
+	text-shadow:0px 1px 0px rgba(0,0,0,0.3);
+	color:#fff;
 }
