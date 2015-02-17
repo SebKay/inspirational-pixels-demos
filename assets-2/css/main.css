@@ -40,21 +40,22 @@
 \*------------------------------------*/
 /* line 2, ../scss/2-framework/_typography.scss */
 body, input {
-  font-family: "Open Sans";
+  font-family: "Gudea";
   font-size: 16px;
   color: #525252;
   line-height: 100%;
 }
 
-/* line 9, ../scss/2-framework/_typography.scss */
+/* line 5, ../scss/2-framework/_typography.scss */
 h1, h1 a,
 h2, h2 a,
 h3, h3 a,
 h4, h4 a,
 h5, h5 a {
-  font-family: "Abeezee";
+  font-family: "Asap";
   color: #262626;
   line-height: 1.200em;
+  margin-bottom: 20px;
 }
 
 /* line 11, ../scss/2-framework/_typography.scss */
@@ -84,7 +85,7 @@ h5 {
 
 /* line 18, ../scss/2-framework/_typography.scss */
 p {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.750em;
 }
 
@@ -100,7 +101,7 @@ ul li, ol li {
   line-height: 1.650em;
 }
 
-/* line 24, ../scss/2-framework/_typography.scss */
+/* line 23, ../scss/2-framework/_typography.scss */
 ul + p, ol + p,
 p + h1, p + h2, p + h3, p + h4, p + h5 {
   margin-top: 30px;
@@ -123,7 +124,7 @@ em {
 
 /* line 30, ../scss/2-framework/_typography.scss */
 a {
-  color: #3c8fc7;
+  color: #3C8FC7;
   text-decoration: none;
 }
 
@@ -139,7 +140,6 @@ a:hover {
   font-weight: normal;
   font-style: normal;
 }
-
 /* line 18, ../scss/2-framework/_font-awesome.scss */
 .fa-glass:before {
   content: "\f000";
@@ -230,7 +230,7 @@ a:hover {
   content: "\f012";
 }
 
-/* line 73, ../scss/2-framework/_font-awesome.scss */
+/* line 72, ../scss/2-framework/_font-awesome.scss */
 .fa-gear:before,
 .fa-cog:before {
   content: "\f013";
@@ -286,7 +286,7 @@ a:hover {
   content: "\f01d";
 }
 
-/* line 107, ../scss/2-framework/_font-awesome.scss */
+/* line 106, ../scss/2-framework/_font-awesome.scss */
 .fa-rotate-right:before,
 .fa-repeat:before {
   content: "\f01e";
@@ -422,7 +422,7 @@ a:hover {
   content: "\f03a";
 }
 
-/* line 189, ../scss/2-framework/_font-awesome.scss */
+/* line 188, ../scss/2-framework/_font-awesome.scss */
 .fa-dedent:before,
 .fa-outdent:before {
   content: "\f03b";
@@ -463,7 +463,7 @@ a:hover {
   content: "\f043";
 }
 
-/* line 214, ../scss/2-framework/_font-awesome.scss */
+/* line 213, ../scss/2-framework/_font-awesome.scss */
 .fa-edit:before,
 .fa-pencil-square-o:before {
   content: "\f044";
@@ -614,7 +614,7 @@ a:hover {
   content: "\f063";
 }
 
-/* line 305, ../scss/2-framework/_font-awesome.scss */
+/* line 304, ../scss/2-framework/_font-awesome.scss */
 .fa-mail-forward:before,
 .fa-share:before {
   content: "\f064";
@@ -675,7 +675,7 @@ a:hover {
   content: "\f070";
 }
 
-/* line 342, ../scss/2-framework/_font-awesome.scss */
+/* line 341, ../scss/2-framework/_font-awesome.scss */
 .fa-warning:before,
 .fa-exclamation-triangle:before {
   content: "\f071";
@@ -771,7 +771,7 @@ a:hover {
   content: "\f084";
 }
 
-/* line 400, ../scss/2-framework/_font-awesome.scss */
+/* line 399, ../scss/2-framework/_font-awesome.scss */
 .fa-gears:before,
 .fa-cogs:before {
   content: "\f085";
@@ -987,13 +987,13 @@ a:hover {
   content: "\f0b2";
 }
 
-/* line 530, ../scss/2-framework/_font-awesome.scss */
+/* line 529, ../scss/2-framework/_font-awesome.scss */
 .fa-group:before,
 .fa-users:before {
   content: "\f0c0";
 }
 
-/* line 534, ../scss/2-framework/_font-awesome.scss */
+/* line 533, ../scss/2-framework/_font-awesome.scss */
 .fa-chain:before,
 .fa-link:before {
   content: "\f0c1";
@@ -1009,13 +1009,13 @@ a:hover {
   content: "\f0c3";
 }
 
-/* line 544, ../scss/2-framework/_font-awesome.scss */
+/* line 543, ../scss/2-framework/_font-awesome.scss */
 .fa-cut:before,
 .fa-scissors:before {
   content: "\f0c4";
 }
 
-/* line 548, ../scss/2-framework/_font-awesome.scss */
+/* line 547, ../scss/2-framework/_font-awesome.scss */
 .fa-copy:before,
 .fa-files-o:before {
   content: "\f0c5";
@@ -1026,7 +1026,7 @@ a:hover {
   content: "\f0c6";
 }
 
-/* line 555, ../scss/2-framework/_font-awesome.scss */
+/* line 554, ../scss/2-framework/_font-awesome.scss */
 .fa-save:before,
 .fa-floppy-o:before {
   content: "\f0c7";
@@ -1127,19 +1127,19 @@ a:hover {
   content: "\f0db";
 }
 
-/* line 616, ../scss/2-framework/_font-awesome.scss */
+/* line 615, ../scss/2-framework/_font-awesome.scss */
 .fa-unsorted:before,
 .fa-sort:before {
   content: "\f0dc";
 }
 
-/* line 620, ../scss/2-framework/_font-awesome.scss */
+/* line 619, ../scss/2-framework/_font-awesome.scss */
 .fa-sort-down:before,
 .fa-sort-asc:before {
   content: "\f0dd";
 }
 
-/* line 624, ../scss/2-framework/_font-awesome.scss */
+/* line 623, ../scss/2-framework/_font-awesome.scss */
 .fa-sort-up:before,
 .fa-sort-desc:before {
   content: "\f0de";
@@ -1155,19 +1155,19 @@ a:hover {
   content: "\f0e1";
 }
 
-/* line 634, ../scss/2-framework/_font-awesome.scss */
+/* line 633, ../scss/2-framework/_font-awesome.scss */
 .fa-rotate-left:before,
 .fa-undo:before {
   content: "\f0e2";
 }
 
-/* line 638, ../scss/2-framework/_font-awesome.scss */
+/* line 637, ../scss/2-framework/_font-awesome.scss */
 .fa-legal:before,
 .fa-gavel:before {
   content: "\f0e3";
 }
 
-/* line 642, ../scss/2-framework/_font-awesome.scss */
+/* line 641, ../scss/2-framework/_font-awesome.scss */
 .fa-dashboard:before,
 .fa-tachometer:before {
   content: "\f0e4";
@@ -1183,7 +1183,7 @@ a:hover {
   content: "\f0e6";
 }
 
-/* line 652, ../scss/2-framework/_font-awesome.scss */
+/* line 651, ../scss/2-framework/_font-awesome.scss */
 .fa-flash:before,
 .fa-bolt:before {
   content: "\f0e7";
@@ -1199,7 +1199,7 @@ a:hover {
   content: "\f0e9";
 }
 
-/* line 662, ../scss/2-framework/_font-awesome.scss */
+/* line 661, ../scss/2-framework/_font-awesome.scss */
 .fa-paste:before,
 .fa-clipboard:before {
   content: "\f0ea";
@@ -1355,7 +1355,7 @@ a:hover {
   content: "\f10a";
 }
 
-/* line 756, ../scss/2-framework/_font-awesome.scss */
+/* line 755, ../scss/2-framework/_font-awesome.scss */
 .fa-mobile-phone:before,
 .fa-mobile:before {
   content: "\f10b";
@@ -1386,7 +1386,7 @@ a:hover {
   content: "\f111";
 }
 
-/* line 775, ../scss/2-framework/_font-awesome.scss */
+/* line 774, ../scss/2-framework/_font-awesome.scss */
 .fa-mail-reply:before,
 .fa-reply:before {
   content: "\f112";
@@ -1462,7 +1462,7 @@ a:hover {
   content: "\f122";
 }
 
-/* line 822, ../scss/2-framework/_font-awesome.scss */
+/* line 820, ../scss/2-framework/_font-awesome.scss */
 .fa-star-half-empty:before,
 .fa-star-half-full:before,
 .fa-star-half-o:before {
@@ -1484,7 +1484,7 @@ a:hover {
   content: "\f126";
 }
 
-/* line 835, ../scss/2-framework/_font-awesome.scss */
+/* line 834, ../scss/2-framework/_font-awesome.scss */
 .fa-unlink:before,
 .fa-chain-broken:before {
   content: "\f127";
@@ -1675,25 +1675,25 @@ a:hover {
   content: "\f14e";
 }
 
-/* line 950, ../scss/2-framework/_font-awesome.scss */
+/* line 949, ../scss/2-framework/_font-awesome.scss */
 .fa-toggle-down:before,
 .fa-caret-square-o-down:before {
   content: "\f150";
 }
 
-/* line 954, ../scss/2-framework/_font-awesome.scss */
+/* line 953, ../scss/2-framework/_font-awesome.scss */
 .fa-toggle-up:before,
 .fa-caret-square-o-up:before {
   content: "\f151";
 }
 
-/* line 958, ../scss/2-framework/_font-awesome.scss */
+/* line 957, ../scss/2-framework/_font-awesome.scss */
 .fa-toggle-right:before,
 .fa-caret-square-o-right:before {
   content: "\f152";
 }
 
-/* line 962, ../scss/2-framework/_font-awesome.scss */
+/* line 961, ../scss/2-framework/_font-awesome.scss */
 .fa-euro:before,
 .fa-eur:before {
   content: "\f153";
@@ -1704,19 +1704,19 @@ a:hover {
   content: "\f154";
 }
 
-/* line 969, ../scss/2-framework/_font-awesome.scss */
+/* line 968, ../scss/2-framework/_font-awesome.scss */
 .fa-dollar:before,
 .fa-usd:before {
   content: "\f155";
 }
 
-/* line 973, ../scss/2-framework/_font-awesome.scss */
+/* line 972, ../scss/2-framework/_font-awesome.scss */
 .fa-rupee:before,
 .fa-inr:before {
   content: "\f156";
 }
 
-/* line 979, ../scss/2-framework/_font-awesome.scss */
+/* line 976, ../scss/2-framework/_font-awesome.scss */
 .fa-cny:before,
 .fa-rmb:before,
 .fa-yen:before,
@@ -1724,20 +1724,20 @@ a:hover {
   content: "\f157";
 }
 
-/* line 984, ../scss/2-framework/_font-awesome.scss */
+/* line 982, ../scss/2-framework/_font-awesome.scss */
 .fa-ruble:before,
 .fa-rouble:before,
 .fa-rub:before {
   content: "\f158";
 }
 
-/* line 988, ../scss/2-framework/_font-awesome.scss */
+/* line 987, ../scss/2-framework/_font-awesome.scss */
 .fa-won:before,
 .fa-krw:before {
   content: "\f159";
 }
 
-/* line 992, ../scss/2-framework/_font-awesome.scss */
+/* line 991, ../scss/2-framework/_font-awesome.scss */
 .fa-bitcoin:before,
 .fa-btc:before {
   content: "\f15a";
@@ -1993,7 +1993,7 @@ a:hover {
   content: "\f190";
 }
 
-/* line 1146, ../scss/2-framework/_font-awesome.scss */
+/* line 1145, ../scss/2-framework/_font-awesome.scss */
 .fa-toggle-left:before,
 .fa-caret-square-o-left:before {
   content: "\f191";
@@ -2014,7 +2014,7 @@ a:hover {
   content: "\f194";
 }
 
-/* line 1159, ../scss/2-framework/_font-awesome.scss */
+/* line 1158, ../scss/2-framework/_font-awesome.scss */
 .fa-turkish-lira:before,
 .fa-try:before {
   content: "\f195";
@@ -2033,12 +2033,12 @@ a:hover {
   box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.3), inset 0px 2px 0px rgba(255, 255, 255, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   border: none;
-  background: #3c8fc7;
+  background: #3C8FC7;
   -moz-transition: all linear 0.15s;
   -webkit-transition: all linear 0.15s;
   -o-transition: all linear 0.15s;
   -ms-transition: all linear 0.15s;
-  font-family: "Open Sans";
+  font-family: "Gudea";
   font-size: 0.938em;
   font-weight: 600;
   text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
@@ -2128,7 +2128,7 @@ button.btn {
 
 /* line 1, ../scss/3-components/global/_site-logo.scss */
 .site-logo {
-  font-family: "Abeezee";
+  font-family: "Asap";
   font-size: 3.000em;
   color: #777;
   line-height: 100%;
