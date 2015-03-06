@@ -24,19 +24,6 @@
 	}
 }
 
-%alert-large {
-	padding:30px;
-
-	p {
-		font-size:24px;
-	}
-
-	&:before {
-		width:40px;
-		height:40px;
-	}
-}
-
 %alert-small {
 	padding:10px;
 
@@ -47,6 +34,19 @@
 	&:before {
 		width:18px;
 		height:18px;
+	}
+}
+
+%alert-large {
+	padding:30px;
+
+	p {
+		font-size:24px;
+	}
+
+	&:before {
+		width:40px;
+		height:40px;
 	}
 }
 
