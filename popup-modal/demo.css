@@ -8,17 +8,23 @@
 /*------------------------------------------------------------
 -------- DEMO Code
 ------------------------------------------------------------*/
-.popup-wrap {
+.popup {
 	width:100%;
 	height:100%;
+	opacity:0;
 	position:fixed;
 	top:0px;
 	left:0px;
-	z-index:9999;
+	z-index:-1;
 	background:rgba(0,0,0,0.8);
 }
 
-.popup {
+.popup-open {
+	opacity:1;
+	z-index:9999;
+}
+
+.popup-inner {
 	max-width:700px;
 	width:100%;
 	padding:40px;
