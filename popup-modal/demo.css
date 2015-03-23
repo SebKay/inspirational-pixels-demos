@@ -44,6 +44,7 @@
 	top:0px;
 	right:0px;
 	transition:ease 0.25s all;
+	-webkit-transform:translate(50%, -50%);
 	transform:translate(50%, -50%);
 	border-radius:1000px;
 	background:rgba(0,0,0,0.8);
@@ -55,6 +56,7 @@
 }
 
 .popup-close:hover {
+	-webkit-transform:translate(50%, -50%) rotate(180deg);
 	transform:translate(50%, -50%) rotate(180deg);
 	background:rgba(0,0,0,1);
 	text-decoration:none;
