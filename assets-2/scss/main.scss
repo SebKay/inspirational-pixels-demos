@@ -39,7 +39,8 @@ html, body {
 }
 
 .main {
-	width:1000px;
+	max-width:1000px;
+	width:90%;
 	margin:0px auto;
 	@extend %clearfix;
 }
