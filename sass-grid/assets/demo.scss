@@ -19,6 +19,8 @@ p {
 
 //----- Grid System
 $grid-spacing:3%;
+$grid-break-1:1024px;
+$grid-break-2:768px;
 
 .grid {
 	padding:$grid-spacing;
@@ -63,4 +65,4 @@ $grid-spacing:3%;
 .col-9 { width:74.25%; }
 .col-10 { width:82.83333333333333%; }
 .col-11 { width:91.41666666666666%; }
-.col-12 { width:100%; }
+.col-12 { width:100%; }	
