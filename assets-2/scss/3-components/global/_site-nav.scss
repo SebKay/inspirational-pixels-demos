@@ -1,16 +1,33 @@
 .site-header .site-nav {
 	width:100%;
 	margin-top:30px;
-	padding-top:30px;
-	box-shadow:inset 0px 1px 0px white(0.05);
-	border-top:1px solid black(0.75);
+
+	ul {
+		display:inline-block;
+		@extend %inline-list;
+	}
+
+	ul li {
+		margin:0px 20px 0px;
+		// Type
+		font-size:18px;
+		line-height:100%;
+
+		&:first-child {
+			margin-left:0px;
+		}
+	}
+
+	[class^="fa-"] {
+		padding-right:5px;
+		-webkit-text-stroke:0px;
+	}
 
 	a {
-		margin-right:40px;
+		-webkit-text-stroke:0.5px #6f7883;
 		// Type
-		font-weight:600;
-		color:#777;
-		@include transition(color linear 0.15s);
+		color:#6f7883;
+		@include transition(all linear 0.15s);
 
 		&:hover {
 			// Type
@@ -18,10 +35,12 @@
 			color:#fff;
 		}
 
-		[class^="fa-"] {
-			margin-right:5px;
+		&:before {
+			padding-right:3px;
+			position:relative;
+			-webkit-text-stroke:0px;
 			// Type
-			font-size:1.200em;
+			@extend %icon-font;
 		}
 	}
 }

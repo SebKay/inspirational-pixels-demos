@@ -1,20 +1,24 @@
 .site-logo {
-	// Type
-	font-family:$font-family-2;
-	font-size:3.000em;
-	color:#777;
-	line-height:100%;
-	@include transition(color linear 0.15s);
+	width:353px;
+	max-width:100%;
+	height:41px;
+	display:inline-block;
+	background:url("../img/site-logo-@2x.png") no-repeat;
+	background-size:100%;
+	@extend %remove-text;
+	@include transition(opacity linear 0.15s);
 
 	&:hover {
-		// Type
-		text-decoration:none;
-		color:#fff;
+		opacity:0.4;
 	}
+}
 
-	span {
-		display:block;
-		// Type
-		font-size:0.500em;
-	}
+.site-tagline {
+	margin-top:10px;
+	display:block;
+	opacity:0.4;
+	// Type
+	font-size:26px;
+	text-transform:uppercase;
+	color:#fff;
 }
