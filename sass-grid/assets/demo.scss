@@ -22,12 +22,13 @@ $grid-spacing:3%;
 
 .grid {
 	padding:$grid-spacing;
-	background:#e4e4e4;
+	background:#f6f7f8;
 
 	[class^="col-"] {
 		padding:10px;
-		background:#fff;
+		background:#e4e5e7;
 		text-align:center;
+		color:#767779;
 	}
 }
 

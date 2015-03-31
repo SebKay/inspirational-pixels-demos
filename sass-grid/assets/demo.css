@@ -15,11 +15,12 @@ p {
 
 .grid {
   padding: 3%;
-  background: #e4e4e4; }
+  background: #f6f7f8; }
   .grid [class^="col-"] {
     padding: 10px;
-    background: #fff;
-    text-align: center; }
+    background: #e4e5e7;
+    text-align: center;
+    color: #767779; }
 
 .row + .row {
   margin-top: 3%; }
